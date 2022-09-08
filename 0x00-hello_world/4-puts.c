@@ -1,5 +1,8 @@
 #include <stdio.h>
-/* prints sentence */
+/**
+ * main - entry point
+ * Return:0 after printing sentence
+ */
 int main(void)
 {
 char str1[] = "\"Programming is like building a multilingual puzzle";
