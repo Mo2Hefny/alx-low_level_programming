@@ -11,7 +11,7 @@ int main(void)
 
 	for (i = 48; i < 58; i++)
 	{
-		printf("%d", i);
+		putchar(i);
 		if (i < 57)
 		{
 			putchar(',');
