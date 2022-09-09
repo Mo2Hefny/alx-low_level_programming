@@ -15,7 +15,10 @@ int main(void)
 		{
 			for (n = i; n < 58; n++)
 			{
-				n == i ? m = j + 1 : m = 0;
+				if (n == i)
+					m = j + 1;
+				else
+					m = 48;
 				for ( ; m < 58; m++)
 				{
 					putchar(i);
