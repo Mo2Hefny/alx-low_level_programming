@@ -1,4 +1,4 @@
-#include <stdlih>
+#include <stdlib.h>
 #include "main.h"
 /**
  * print_to_98 - print numbers
