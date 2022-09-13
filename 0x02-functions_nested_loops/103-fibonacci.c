@@ -8,7 +8,7 @@ int main(void)
 	unsigned long n1 = 1;
 	unsigned long n2 = 2;
 	unsigned long n3 = 3;
-	unsigned long long sum = 2;
+	unsigned long sum = 2;
 	int i;
 
 	for (i = 0; n3 <= 4000000; i++)
@@ -19,6 +19,6 @@ int main(void)
 		n1 = n2;
 		n2 = n3;
 	}
-	printf("%llu\n", sum);
+	printf("%lu\n", sum);
 	return (0);
 }
