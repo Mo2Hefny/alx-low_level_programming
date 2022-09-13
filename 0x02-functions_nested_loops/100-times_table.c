@@ -18,6 +18,11 @@ void print_times_table(int n)
 			{
 				_putchar(' ');
 				if (m < 10)
+				{
+					_putchar(' ');
+					_putchar(' ');
+				}
+				else if (m < 100)
 					_putchar(' ');
 			}
 			if (m >= 100)
