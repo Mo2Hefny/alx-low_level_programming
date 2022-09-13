@@ -10,7 +10,7 @@ int main(void)
 	int i;
 
 	for (i = 0; i < 8; i++)
-		putchar(_putchar(word[i]));
+	        _putchar(word[i]);
 	putchar('\n');
 	return (0);
 }
