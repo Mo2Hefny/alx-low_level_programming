@@ -7,7 +7,7 @@ int main(void)
 {
 	unsigned long n1 = 1;
 	unsigned long n2 = 2;
-	unsigned long n3 = 3
+	unsigned long n3 = 3;
 	unsigned long long sum = 2;
 	int i;
 
