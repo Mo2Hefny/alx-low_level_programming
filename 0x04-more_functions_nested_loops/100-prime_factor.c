@@ -1,10 +1,15 @@
 #include <stdio.h>
 
-int main()
+/**
+ * main - print largest prime factor
+ * Return: 0
+ */
+
+int main(void)
 {
-unsigned long long number = 612852475143;
-unsigned long long n_max;
-unsigned long long i, n;
+unsigned long number = 612852475143;
+unsigned long n_max;
+unsigned long i, n;
 int flag = 1;
 
 while (flag)
@@ -22,7 +27,7 @@ continue;
 n_max = number / 12;
 for (n = 1; n < n_max; n++)
 {
-i = 6*n - 1;
+i = 6 * n - 1;
 if (number % i == 0)
 {
 flag = 1;
@@ -39,6 +44,6 @@ break;
 flag = 0;
 }
 }
-printf("%llu", number);
-return 0;
+printf("%lu", number);
+return (0);
 }
