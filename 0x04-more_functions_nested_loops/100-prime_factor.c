@@ -44,6 +44,6 @@ break;
 flag = 0;
 }
 }
-printf("%lu", number);
+printf("%lu\n", number);
 return (0);
 }
