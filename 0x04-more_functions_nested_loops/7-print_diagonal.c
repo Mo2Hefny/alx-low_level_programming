@@ -4,7 +4,8 @@
  * print_diagonal - print diagonal line
  * @n: length
  */
-void print_diagonal(int n);
+
+void print_diagonal(int n)
 {
 int i,j;
 if (n <= 0)
