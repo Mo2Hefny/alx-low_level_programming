@@ -2,11 +2,12 @@
 
 /**
  * mul - multiply two digits
- * @a, @b: input
+ * @a: input
+ * @b: input
  * Return: multiply
  */
 
 int mul(int a, int b)
 {
-   return (a * b);
+return (a * b);
 }
