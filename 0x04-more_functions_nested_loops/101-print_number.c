@@ -30,5 +30,4 @@ num = temp / div;
 _putchar('0' + num);
 temp -= num *div;
 }
-_putchar('\n');
 }
