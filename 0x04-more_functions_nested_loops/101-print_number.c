@@ -11,6 +11,13 @@ int num = n;
 int temp = n;
 int div = 1;
 
+if (n < 0)
+{
+_putchar('-');
+temp = -n;
+}
+else if (n == 0)
+_putchar('0' + 0);
 while (num != 0)
 {
 div *= 10;
