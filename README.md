@@ -9,3 +9,5 @@
 - C - Debugging.
 
 - C - More functions, more nested loops.
+
+- C - Pointers, arrays and strings.
