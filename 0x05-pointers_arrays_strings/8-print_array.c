@@ -10,7 +10,7 @@ void print_array(int *a, int n)
 {
 while (n > 0)
 {
-_putchar(a);
+_putchar(*a);
 if (n != 1)
 {
 _putchar(',');
