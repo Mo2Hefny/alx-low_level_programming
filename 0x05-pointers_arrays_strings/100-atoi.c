@@ -9,7 +9,7 @@
 int _atoi(char *s)
 {
 int count = 0;
-int num = 0;
+unsigned int num = 0;
 unsigned int i;
 for (i = 0; (s[i] < 48 || s[i] > 57) && s[i] != '\0'; i++)
 {
