@@ -14,8 +14,9 @@ while (n > 0)
 if (n != 1)
 printf("%d, ", *a);
 else
-printf("%d\n", *a);
+printf("%d", *a);
 a++;
 n--;
 }
+_putchar('\n');
 }
