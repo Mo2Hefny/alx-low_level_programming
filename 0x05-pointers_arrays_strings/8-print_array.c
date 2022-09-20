@@ -11,14 +11,11 @@ void print_array(int *a, int n)
 {
 while (n > 0)
 {
-printf("%d",*a);
 if (n != 1)
-{
-_putchar(',');
-_putchar(' ');
-}
+printf("%d, ", *a);
+else
+printf("%d\n", *a);
 a++;
 n--;
 }
-_putchar('\n');
 }
