@@ -1,3 +1,4 @@
+#include <string.h>
 #include "main.h"
 
 /**
@@ -6,9 +7,10 @@
  * @src: added string
  * Return: dest
  */
+
 char *_strcat(char *dest, char *src)
 {
-int len = sizeof(dest) / sizeof(dest[0]);
+int len = strlen(dest);
 int i;
 for (i = 0; src[i] != '\0'; i++)
 dest[len + i] = src[i];
