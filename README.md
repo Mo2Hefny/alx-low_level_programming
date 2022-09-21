@@ -11,3 +11,5 @@
 - C - More functions, more nested loops.
 
 - C - Pointers, arrays and strings.
+
+- C - More pointers, arrays and strings.
