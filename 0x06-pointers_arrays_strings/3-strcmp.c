@@ -13,14 +13,9 @@ int i, diff;
 for (i = 0; s1[i] && s2[i]; i++)
 {
 diff = s1[i] - s2[i];
-if (diff > 0)
-return (15);
-else if (diff < 0)
-return (-15);
+if (!diff)
+return (diff);
 }
-if (!s1[i] && !s2[i])
-return (0);
-else if (!s1[i])
-return (-15);
-return (15);
+diff = s1[i] - s2[i];
+return (diff);
 }
