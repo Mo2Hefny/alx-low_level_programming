@@ -13,7 +13,7 @@ int i, j, len = 0;
 int found;
 while (s[len])
 len++;
-for (i = 0; i < len; i++)
+for (i = 0; i <= len; i++)
 {
 found = 0;
 for (j = 0; accept[j]; j++)
