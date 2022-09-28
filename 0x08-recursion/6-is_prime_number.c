@@ -13,7 +13,7 @@ if (div < n / 2)
 {
 if (n % div == 0)
 return (0);
-return(prime_check(n, div + 1));
+return (prime_check(n, div + 1));
 }
 return (1);
 }
