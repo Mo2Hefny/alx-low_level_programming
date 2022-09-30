@@ -27,7 +27,7 @@ return (0);
  */
 int main(int argc, char *argv[])
 {
-int change;
+long change;
 if (argc != 2)
 {
 printf("Error\n");
