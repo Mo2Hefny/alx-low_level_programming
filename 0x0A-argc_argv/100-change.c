@@ -34,11 +34,6 @@ printf("Error\n");
 return (1);
 }
 change = atoi(argv[1]);
-if (change < 0)
-{
-printf("0\n");
-return (1);
-}
 printf("%d\n", min(change));
 return (0);
 }
