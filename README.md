@@ -17,3 +17,5 @@
 - C - Even more pointers, arrays and strings.
 
 - C - Recursion.
+
+- C - Static libraries.
