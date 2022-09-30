@@ -7,7 +7,7 @@
  */
 int isnumber(char *s)
 {
-if(!*s)
+if (!*s)
 return (1);
 if (*s >= '0' && *s <= '9')
 return (isnumber(++s));
