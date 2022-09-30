@@ -19,3 +19,5 @@
 - C - Recursion.
 
 - C - Static libraries.
+
+- C - argc, argv.
