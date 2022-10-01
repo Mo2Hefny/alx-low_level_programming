@@ -8,13 +8,13 @@
 int min(int n)
 {
 if (n >= 25)
-return (1 + min(n - 25));
+return (n / 25 + min(n % 25));
 if (n >= 10)
-return (1 + min(n - 10));
+return (n / 10 + min(n % 10));
 if (n >= 5)
-return (1 + min(n - 5));
+return (n / 5 + min(n % 5));
 if (n >= 2)
-return (1 + min(n - 2));
+return (n / 2 + min(n % 2));
 if (n >= 1)
 return (1 + min(n - 1));
 return (0);
