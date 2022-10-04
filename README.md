@@ -21,3 +21,5 @@
 - C - Static libraries.
 
 - C - argc, argv.
+
+- C - malloc, free.
