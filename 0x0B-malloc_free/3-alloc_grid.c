@@ -14,14 +14,20 @@ int **p;
 int w = 0, h = 0;
 if (width <= 0 || height <= 0)
 return (0);
-p = (int **) malloc(sizeof(int*) *height);
+p = (int **) malloc(sizeof(int *) * height);
 if (!p)
+{
+free(p);
 return (0);
+}
 while (h < height)
 {
-p[h] = (int *) malloc(sizeof(int) *width);
+p[h] = (int *) malloc(sizeof(int) * width);
 if (!p[h])
+{
+free(p[h]);
 return (0);
+}
 w = 0;
 while (w < width)
 {
