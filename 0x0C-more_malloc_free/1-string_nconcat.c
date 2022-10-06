@@ -23,6 +23,8 @@ while (s2[len2])
 len2++;
 size = len1 + len2;
 str = malloc(size + 1);
+if (str == NULL)
+return (NULL);
 for (i = 0; s1[i]; i++)
 str[i] = s1[i];
 for (i = 0; i < n && s2[i] ; i++)
