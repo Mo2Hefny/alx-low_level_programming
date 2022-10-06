@@ -17,7 +17,7 @@ return (NULL);
 alloc = malloc(nmemb *size);
 if (alloc == NULL)
 return (NULL);
-for (i = 0; i < size; i++)
+for (i = 0; i < nmemb; i++)
 alloc[i] = 0;
 return (alloc);
 }
