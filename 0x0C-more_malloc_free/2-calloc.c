@@ -14,7 +14,7 @@ char *alloc;
 unsigned int i;
 if (nmemb < 1 || size < 1)
 return (NULL);
-alloc = malloc(nmemb *size);
+alloc = malloc(nmemb * size);
 if (alloc == NULL)
 return (NULL);
 for (i = 0; i < nmemb; i++)
