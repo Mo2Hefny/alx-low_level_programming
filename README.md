@@ -27,3 +27,5 @@
 - C - More malloc, free.
 
 - C - Preprocessor.
+
+- C - Structures, typedef.
