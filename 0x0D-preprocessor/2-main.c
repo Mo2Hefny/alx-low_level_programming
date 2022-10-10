@@ -9,6 +9,6 @@
 
 int main(void)
 {
-printf("%s\n",__FILENAME__);
+printf("%s\n", __FILENAME__);
 return (0);
 }
