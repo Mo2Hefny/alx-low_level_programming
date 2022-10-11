@@ -19,8 +19,10 @@ if (!d || !name || !owner)
 free(d);
 return (NULL);
 }
-while (name[len1++]);
-while (owner[len2++]);
+while (name[len1++])
+;
+while (owner[len2++])
+;
 d->name = malloc(len1 + 1);
 d->owner = malloc(len2 + 1);
 if (d->name == NULL || d->owner == NULL)
