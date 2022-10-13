@@ -4,8 +4,7 @@
 
 /**
  * get_op_func - get operation
- * @a: integer1
- * @b: integer2
+ * @s: operation
  * Return: solution
  */
 
