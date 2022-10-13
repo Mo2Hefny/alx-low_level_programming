@@ -9,15 +9,13 @@
 
 void print_all(const char * const format, ...)
 {
-int len = 0, i = 0;
+int i = 0;
 char *sep = ", ", *str;
 va_list args;
 va_start(args, format);
-while (format[len++])
-;
-while (format[i])
+while (format[i] && format)
 {
-if (i + 1 == len)
+if (!format[i + 1])
 sep = "";
 switch (format[i])
 {
@@ -33,7 +31,7 @@ break;
 case 's':
 str = va_arg(args, char *);
 if (str == NULL)
-printf("(nil)");
+printf("(nil)%s", sep);
 else
 printf("%s%s", str, sep);
 break;
