@@ -17,12 +17,12 @@ va_start(args, n);
 if (!separator)
 sep = "";
 else
-sep = separator;
+sep = (char *) separator;
 for (i = 0; i < n; i++)
 {
 printf("%d", va_arg(args, int));
 if (i + 1 < n)
-printf("%s", separator);
+printf("%s", sep);
 else
 printf("\n");
 }
