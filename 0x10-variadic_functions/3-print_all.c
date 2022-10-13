@@ -31,8 +31,7 @@ break;
 case 's':
 str = va_arg(args, char *);
 if (str == NULL)
-printf("(nil)%s", sep);
-else
+str = "(nil)";
 printf("%s%s", str, sep);
 break;
 }
