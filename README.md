@@ -29,3 +29,5 @@
 - C - Preprocessor.
 
 - C - Structures, typedef.
+
+- C - Function pointers.
