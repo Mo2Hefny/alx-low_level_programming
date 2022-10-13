@@ -23,8 +23,7 @@ for (i = 0; i < n; i++)
 printf("%d", va_arg(args, int));
 if (i + 1 < n)
 printf("%s", sep);
-else
-printf("\n");
 }
+printf("\n");
 va_end(args);
 }
