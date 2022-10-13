@@ -29,7 +29,7 @@ exit(100);
 }
 if (get_op_func(op) == NULL || argv[2][1])
 {
-printf("Error");
+printf("Error\n");
 exit(99);
 }
 p = get_op_func(op);
