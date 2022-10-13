@@ -18,12 +18,10 @@ if (!separator)
 sep = "";
 else
 sep = (char *) separator;
-for (i = 0; i < n; i++)
-{
+if (n > 0)
 printf("%d", va_arg(args, int));
-if (i + 1 < n)
-printf("%s", sep);
-}
+for (i = 1; i < n; i++)
+printf("%s%d", sep, va_arg(args, int));
 printf("\n");
 va_end(args);
 }
