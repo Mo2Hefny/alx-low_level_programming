@@ -9,13 +9,15 @@
 
 void print_all(const char * const format, ...)
 {
-int i = 0;
+int len = 0, i = 0;
 char *sep = ", ", *str;
 va_list args;
 va_start(args, format);
+while (format[len++])
+;
 while (format[i])
 {
-if (!format[i + 1])
+if (i + 1 == len)
 sep = "";
 switch (format[i])
 {
