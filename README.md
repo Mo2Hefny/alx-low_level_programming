@@ -34,3 +34,4 @@
 
 - C - Variadic functions.
 
+- C - Singly linked lists.
