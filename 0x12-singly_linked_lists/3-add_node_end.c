@@ -1,5 +1,6 @@
 #include "lists.h"
 #include <string.h>
+#include <stdlib.h>
 
 /**
  * add_node_end - Adds a new node at the end
@@ -10,6 +11,7 @@
  * Return: If the function fails - NULL.
  *         Otherwise - the address of the new element.
  */
+
 list_t *add_node_end(list_t **head, const char *str)
 {
 char *dup;
@@ -29,7 +31,7 @@ while (str[len])
 len++;
 
 new->str = dup;
-new->len = len
+new->len = len;
 new->next = NULL;
 if (*head == NULL)
 *head = new;
