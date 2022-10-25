@@ -15,7 +15,7 @@ if (*head == NULL)
 return (0);
 pop = *head;
 element = pop->n;
+*head = pop->next;
 free(pop);
-*head = (*head)->next;
 return (element);
 }
