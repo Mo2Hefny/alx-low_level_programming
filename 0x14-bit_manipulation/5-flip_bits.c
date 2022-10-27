@@ -17,7 +17,7 @@ unsigned long int change = n ^ m;
 for (i = 63; i >= 0; i--)
 {
 current = change >> i;
-if (current & 0)
+if (current & 1)
 count++;
 }
 return (count);
