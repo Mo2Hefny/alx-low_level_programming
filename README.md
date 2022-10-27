@@ -37,3 +37,5 @@
 - C - Singly linked lists.
 
 - C - More singly linked lists.
+
+- C - Bit manipulation.
