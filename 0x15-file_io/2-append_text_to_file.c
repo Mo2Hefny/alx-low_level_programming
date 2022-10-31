@@ -17,7 +17,7 @@ if (!filename)
 return (-1);
 while (text_content[len++])
 ;
-o = open(filename, O_WRONLY | O_APPEND)
+o = open(filename, O_WRONLY | O_APPEND);
 w = write(o, text_content, len - 1);
 if (o == -1 || w == -1)
 return (-1);
