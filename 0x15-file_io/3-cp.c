@@ -1,21 +1,12 @@
 #include "main.h"
-
-#include <stdlib.h>
-
-
-
-/**
-
- * create_buffer - Allocates 1024 bytes for file 2
-
- * @file_name: Pointer to file.
-
- * Return: Pointer to allocated bytes for buffer
-
- */
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+
+/**
+ * create_buffer - Allocates 1024 bytes for file 2
+ * @file_name: Pointer to file.
+ * Return: Pointer to allocated bytes for buffer
+ */
 
 char *create_buffer(char *file_name)
 {
@@ -28,16 +19,18 @@ exit(99);
 }
 return (buffer);
 }
+
 /**
  * close_file - closes file
  * @file_name: pointer to file
  */
 
-void close_file(char *file_name)
+void close_file(int file_name)
 {
-if (close(file_name) == -1)
+int c = close(file_name);
+if (c == -1)
 {
-dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_name);
 exit(100);
 }
 }
@@ -48,11 +41,12 @@ exit(100);
  * Return: Always 0.
  */
 
-int main(int ac, char **av)
+int main(int argc, char **argv)
 {
-FILE *file_from;
-FILE *file_to;
+int file_from, file_to;
 int r, w;
+char *buffer;
+
 if (argc != 3)
 {
 dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
